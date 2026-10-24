@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order eggs, broilers and chicks or ask for advice from GoldenEgg Poultry Farm.">
+  <title>Order &amp; Contact | GoldenEgg Poultry Farm</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">&#128020;</span> GoldenEgg</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="burger" aria-hidden="true">&#9776;</label>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Our Poultry</a></li>
+          <li><a href="shop.html">Prices &amp; FAQ</a></li>
+          <li><a href="contact.html" class="active cta">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner photo-banner contact-banner">
+    <div class="container">
+      <h1>Order &amp; Contact</h1>
+      <p>Tell us what you need and we will reply within two hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split" style="align-items:start">
+      <div>
+        <span class="eyebrow">Get in touch</span>
+        <h2>We would love to hear from you</h2>
+        <p class="lead">Order eggs and birds, ask about chicks, or get advice on starting your own poultry farm.</p>
+        <ul class="contact-list" style="margin-top:1.5rem">
+          <li><span class="icon">&#128205;</span><div><strong>Farm office</strong><br>Mukono Town, Uganda</div></li>
+          <li><span class="icon">&#128222;</span><div><strong>Phone / WhatsApp</strong><br><a href="tel:+256700000000">+256 700 000 000</a></div></li>
+          <li><span class="icon">&#9993;&#65039;</span><div><strong>Email</strong><br><a href="mailto:hello@goldenegg.example">hello@goldenegg.example</a></div></li>
+          <li><span class="icon">&#128339;</span><div><strong>Opening hours</strong><br>Mon &ndash; Sat, 7:00 am &ndash; 6:00 pm</div></li>
+        </ul>
+      </div>
+
+      <form class="form-card" action="#" method="post">
+        <h3 style="margin-bottom:1.2rem">Order / enquiry form</h3>
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+256 7XX XXX XXX" required>
+          </div>
+          <div class="form-row full">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="product">Product</label>
+            <select id="product" name="product" required>
+              <option value="">Select a product</option>
+              <option>Table eggs</option>
+              <option>Broilers (live or dressed)</option>
+              <option>Day-old chicks</option>
+              <option>Point-of-lay pullets</option>
+              <option>Poultry manure</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="qty">Quantity (trays or birds)</label>
+            <input type="number" id="qty" name="qty" min="1" value="10">
+          </div>
+          <div class="form-row">
+            <label for="date">Delivery date</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="form-row full">
+            <fieldset>
+              <legend>Customer type</legend>
+              <label><input type="radio" name="type" value="home" checked> Home</label>
+              <label><input type="radio" name="type" value="business"> Shop / Restaurant</label>
+              <label><input type="radio" name="type" value="farmer"> New poultry farmer</label>
+            </fieldset>
+          </div>
+          <div class="form-row full">
+            <fieldset>
+              <legend>Delivery needs</legend>
+              <label><input type="checkbox" name="needs" value="morning"> Morning delivery</label>
+              <label><input type="checkbox" name="needs" value="graded"> Graded eggs only</label>
+              <label><input type="checkbox" name="needs" value="weekly"> Weekly repeat order</label>
+            </fieldset>
+          </div>
+          <div class="form-row full">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="4" placeholder="Tell us more about your order..."></textarea>
+          </div>
+          <div class="form-row full">
+            <button type="submit" class="btn btn-green">Send Order</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section alt" aria-labelledby="order-history-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Your orders</span>
+        <h2 id="order-history-title">Order history</h2>
+        <p class="lead">Example layout only. Orders are not saved or retrieved by this HTML and CSS demo.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption>Sample order history</caption>
+          <thead>
+            <tr><th>Order</th><th>Product</th><th>Quantity</th><th>Date</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>DEMO-001</td><td>Table eggs</td><td>10 trays</td><td>Sample date</td><td><span class="order-status delivered">Delivered</span></td></tr>
+            <tr><td>DEMO-002</td><td>Day-old chicks</td><td>100 birds</td><td>Sample date</td><td><span class="order-status pending">Processing</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>&#128020; GoldenEgg Poultry Farm</h4><p>Healthy birds, fresh eggs and honest advice for farmers and families across Uganda.</p></div>
+        <div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Our Poultry</a></li><li><a href="shop.html">Prices &amp; FAQ</a></li></ul></div>
+        <div><h4>Support</h4><ul><li><a href="contact.html">Place an order</a></li><li><a href="shop.html#faq">FAQ</a></li><li><a href="https://www.maaif.go.ug" target="_blank" rel="noopener">Ministry of Agriculture</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li>Mukono, Uganda</li><li><a href="tel:+256700000000">+256 700 000 000</a></li><li><a href="mailto:hello@goldenegg.example">hello@goldenegg.example</a></li></ul></div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 GoldenEgg Poultry Farm. A student project built with HTML and CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
